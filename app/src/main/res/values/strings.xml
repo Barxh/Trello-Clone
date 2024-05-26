@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trello clone</string>
+    <string name="default_notification_channel_id">trelloclone_notification_channel_id</string>
+</resources>

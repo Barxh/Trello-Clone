@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view_boards"
+            android:visibility="gone"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_view_no_boards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No boards are available!"
+        android:gravity="center"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

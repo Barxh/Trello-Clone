@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="TrelloClone" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here.
+        Theme.MaterialComponents.DayNight.NoActionBar-->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="TrelloClone.NoActionBar">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="buttonStyle">@style/MyButtonStyle</item>
+    </style>
+    <style name="MyButtonStyle" >
+        <item name="android:textColor">@color/white</item>
+        <!-- Dodajte ili promijenite druge atribute prema potrebi -->
+    </style>
+    <style name="TrelloClone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+    <style name="TrelloClone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+    <style name="ShapeAppearanceOverlay.App.FloatingActionButton" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="android:tint">#FFFFFF</item><!-- Adjust the corner size as needed -->
+    </style>
+</resources>
